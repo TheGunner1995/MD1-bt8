@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="kytu" type="text"><br>
+<button onclick="nhapmang()">nhap</button>
+<button onclick="thayThe()">thay thế</button>
+<p id="kq"></p>
+<p id="kq1"></p>
+<script>
+    let array = []
+
+    function nhapmang() {
+        let a = document.getElementById('kytu').value
+        array.push(a)
+        document.getElementById('kq').innerHTML = 'mang duoc tao ra ' + array
+    }
+
+    function thayThe() {
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === '-') {
+                array[i] = '_'
+            }
+            document.getElementById('kq1').innerHTML = 'mang thay the ' + array
+        }
+
+    }
+</script>
+</body>
+</html>

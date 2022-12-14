@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let num = [1,2,3,4,5,6,8,7,5,9]
+  let max = num[0]
+  let index
+  let sum = 0
+  num.forEach(function (value){
+    sum += value;
+  })
+  for (let i = 0; i <= num.length; i++) {
+    if (num[i]>max){
+      max = num[i]
+      index = i
+    }
+  }
+  document.write('giá trị max là: ' + max + '<br>')
+  document.write('vị trí của giá trị max là: '+ index + '<br>')
+  document.write('trung bình cộng của mảng là: '+ sum/num.length)
+
+
+</script>
+</body>
+</html>
